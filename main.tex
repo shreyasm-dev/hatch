@@ -1,7 +1,17 @@
+\newcommand{\pullquote}[1]{
+  \begin{wrapfigure}{r}{.4\linewidth}
+    \begin{singlespace}
+      \raggedleft
+      \huge #1
+    \end{singlespace}
+  \end{wrapfigure}
+}
+
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
 \usepackage[margin=1in]{geometry}
+\usepackage{wrapfig}
 
 \title{The Egg}
 \author{Andy Weir}
@@ -22,6 +32,8 @@ And that's when you met me.
 “What... what happened?” You asked. “Where am I?”
 
 “You died,” I said, matter-of-factly. No point in mincing words.
+
+\pullquote{“You died,” I said, matter-of-factly.}
 
 “There was a... a truck and it was skidding...”
 
@@ -89,6 +101,8 @@ I stopped walking and took you by the shoulders. “Your soul is more magnificen
 
 “So what's the point of it all?”
 
+\pullquote{“So what's the point of it all?”}
+
 “Seriously?” I asked. “Seriously? You're asking me for the meaning of life? Isn't that a little stereotypical?”
 
 “Well it's a reasonable question,” you persisted.
@@ -123,6 +137,13 @@ You stared blankly at me. “But all the people on earth...”
 
 “And you're the millions he killed.”
 
+\pullquote{
+  “I'm Hitler?” You said, appalled.
+
+  \vspace{0.5em}
+  “And you're the millions he killed.”
+}
+
 “I'm Jesus?”
 
 “And you're everyone who followed him.”
@@ -143,7 +164,7 @@ You thought for a long time.
 
 “So the whole universe,” you said, “it's just...”
 
-“An egg.” I answered. “Now it's time for you to move on to your next life.”
+\vspace{5mm}{ \Huge “An egg.” } I answered. “Now it's time for you to move on to your next life.”
 
 And I sent you on your way.
 
