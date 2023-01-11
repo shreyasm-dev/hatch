@@ -16,16 +16,37 @@
 \usepackage{setspace}
 \usepackage[margin=1in]{geometry}
 \usepackage{wrapfig}
-
-\title{The Egg}
-\author{Andy Weir}
-\date{}
+\usepackage{fontspec}
 
 \doublespace
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+  \begin{center}
+    {
+      \fontspec{Poppins}
+      \fontsize{24}{24}\selectfont
+      Andy Weir
+    }
+
+    \vfill
+    
+    {
+      \fontspec{Sofia Sans}
+      \fontsize{64}{64}\selectfont
+      \textbf{THE EGG}
+    }
+
+    \vfill
+
+    {
+      \fontspec{Fira Mono}
+      \fontsize{12}{12}\selectfont
+      A short story
+    }
+  \end{center}
+\end{titlepage}
 
 {\LARGE Y}{\scshape ou} were on your way home when you died.
 
