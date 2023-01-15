@@ -19,6 +19,8 @@
 \usepackage{fontspec}
 \usepackage{soul}
 \usepackage{hyperref}
+\usepackage{pagecolor}
+\usepackage{afterpage}
 
 \setmainfont{Didot}
 
@@ -224,6 +226,9 @@ You thought for a long time.
 \vspace{1.8mm}{\LARGE And I sent you on your way.}
 
 \newpage
+
+\pagecolor{black}\afterpage{\color{white}}
+\color{white}\afterpage{\color{black}}
 
 \vspace*{\fill}
 
